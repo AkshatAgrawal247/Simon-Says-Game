@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 2.5rem;
+  display: inline-block;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-one, .line-two {
+  display: flex;
+}
+
+.yellow {
+  background-color: #f99b45;
+}
+
+.red {
+  background-color: #d95980;
+}
+
+.purple {
+  background-color: #819ff9;  
+}
+
+.green {
+  background-color: #63aac0;
+}
+
+/* Flash effect for Simon's turn */
+.btn.flash {
+  opacity: 0.7;
+  transition: opacity 0.25s ease;
+}
+
+/* Flash effect for user's turn */
+.btn.userflash {
+  background-color: lightgreen;
+  transition: background-color 0.25s ease;
+}
